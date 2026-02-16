@@ -18,6 +18,21 @@ List<String> motivationMessages = [
 
 
 void main() {
+    String password = "857595153";
+    
+    while (true) {
+        stdout.write("Enter password to access Life Manager: ");
+        String? input = stdin.readLineSync();
+        
+        if (input == password) {
+            print("Accsee granted.\n");
+            break;
+        }
+        
+        else{
+            print("Incorrect password. Try again. \n");
+        }
+    }
     bool life = true;
     
     while(life) {
